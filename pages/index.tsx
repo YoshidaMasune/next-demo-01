@@ -47,7 +47,7 @@ export default function Home() {
 
 
   useEffect( () => {
-    fetch('https://yoshidamasune-jubilant-cod-74p6qx7v9grcpxrg-3000.preview.app.github.dev/api/cat').then(res => res.json()).then(cats => setCats(cats))
+    fetch('http://localhost:3000/api/cat').then(res => res.json()).then(cats => setCats(cats))
   }, [])
    
   return (
